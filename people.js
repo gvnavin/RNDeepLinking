@@ -23,6 +23,7 @@ class People extends React.Component {
         title: 'People',
     };
     render() {
+        console.log("People this.props.navigation.state.params: ", this.props.navigation.state.params);
         const { id } = this.props.navigation.state.params; // B
         if (!people[id]) return <Text>Sorry, no data exists for this user</Text>
         return ( // C
